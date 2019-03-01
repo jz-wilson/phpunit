@@ -4,7 +4,7 @@ FROM php:7.2
 # Update packages
 RUN apt-get update && \
 # Install PHP and composer dependencies
-    apt-get install -qq git curl libwebp-dev libjpeg62-turbo-dev libpng-dev libxpm-dev libfreetype6-dev && \
+    apt-get install -qq git curl libwebp-dev libjpeg62-turbo-dev libpng-dev libxpm-dev libfreetype6-dev sqlite3 libsqlite3-dev && \
 # Clear out the local repository of retrieved package files
     apt-get clean
 # Install needed extensions
